@@ -1,2 +1,10 @@
-package com.example.mvctest.Repository;public class MemberRepository {
+package com.example.mvctest.Repository;
+
+import com.example.mvctest.Entity.Member;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface MemberRepository extends JpaRepository<Member, Long> {
+
 }
